@@ -40,7 +40,7 @@ public class EmpController {
         return "object updated successfully";
     }
 
-    //UPDATE
+    //DELETE
     @RequestMapping(value = "/deleteEmp/{id}", method = RequestMethod.DELETE)
     public String deleteEmp(@PathVariable long id){
         employeeService.delEmp(id);
