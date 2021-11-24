@@ -14,8 +14,6 @@ public class EmpController {
     @Autowired
     EmployeeService employeeService;
 
-    List<Employee> empList = new ArrayList<>();
-
     // CREATE
     @RequestMapping(value = "/addEmp", method = RequestMethod.POST)
     public String addEmp(@RequestBody Employee emp){
