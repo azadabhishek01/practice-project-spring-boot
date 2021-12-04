@@ -29,7 +29,7 @@ public class EmpController {
     }
 
     //UPDATE
-    @RequestMapping(value = "/updateEmp/{id}", method = RequestMethod.PUT)
+    @PutMapping("/updateEmp/{id}")
     public String updateEmp(@PathVariable long id,@RequestBody Employee emp){
         Employee employee = employeeService.getEmpById(id);
         employee.setName(emp.getName());
